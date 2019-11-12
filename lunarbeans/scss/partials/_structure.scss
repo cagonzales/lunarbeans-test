@@ -1,0 +1,46 @@
+/* Site Header */
+ 
+.site-header {
+padding: 1em;
+color: $color-links;
+display: flex;
+justify-content: space-between;
+}
+
+.site-id {
+    display: inline-block;
+}
+
+
+body {
+    background-color: $color-background-body;
+    color: $color-text-body;
+}
+
+h1 {
+    font-family: $heading-fontfamily;
+}
+
+.site-nav {
+    display: inline-block;
+    font-family: $heading-fontfamily;
+
+    ul{
+        list-style: none;
+        display: flex;
+    }
+}
+
+
+p {
+    font-family: $body-fontfamily;
+}
+
+a {
+    display: block;
+    padding: 1em;
+    color: $color-links;
+    text-decoration: none;
+
+}
+
