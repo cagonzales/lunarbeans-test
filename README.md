@@ -1,4 +1,4 @@
-# lunarbeans-test
-Lunar Beans site test
+# sassydemo
+Art 258 Class Exercise
 
-[View Demo] (https://github.com/cagonzales/lunarbeans-test/) 
+[View Demo](https://cagonzales.github.io/lunarbeans-test/)

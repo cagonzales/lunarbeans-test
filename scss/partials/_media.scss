@@ -2,10 +2,20 @@
 img {
     max-width: 105%;
     height: auto;
+    margin-top: 0;
     margin-left: -1em;
     margin-right: -1em;
   }
 
   .logo {
     max-width: 30%;
+  }
+
+  .hero {
+    max-width: 105%;
+    margin-bottom: 0;
+  }
+
+  .collector {
+    max-width: 50%;
   }

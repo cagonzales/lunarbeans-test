@@ -21,6 +21,13 @@ h1 {
     font-family: $heading-fontfamily;
 }
 
+h2 {
+    font-family: $heading-fontfamily;
+    font-size: 6em;
+    margin-top:auto;
+    margin-bottom: auto;
+}
+
 .site-nav {
     display: inline-block;
     font-family: $heading-fontfamily;
@@ -34,6 +41,8 @@ h1 {
 
 p {
     font-family: $body-fontfamily;
+    font-size:1.5em;
+    max-width: 60%;
 }
 
 a {
@@ -44,3 +53,42 @@ a {
 
 }
 
+/* Layout Section */
+
+.split-crossed-left {
+    @media (min-width: $breakpoint-small) {
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .image-block {
+        width: 105%;
+    }
+
+    .text-block {
+        position: absolute;
+        margin-left: 50%;
+        // transform: translateX(-2em);
+    }
+    }
+}
+
+.split-crossed-reversed {
+    @media (min-width: $breakpoint-small) {
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+        }
+
+        .image-block {
+            width: 105%;
+        }
+
+        .text-block {
+            width: 50%;
+            transform: translateX(2em);
+        }
+    }
+}
