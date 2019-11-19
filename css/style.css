@@ -13,7 +13,7 @@ img {
   max-width: 105%;
   margin-bottom: 0; }
 
-.collector {
+.cat {
   max-width: 50%; }
 
 /* Site Header */
@@ -100,6 +100,9 @@ a {
     -webkit-transform: translateX(2em);
     -ms-transform: translateX(2em);
     transform: translateX(2em); } }
+
+.mooncat-moon {
+  position: relative; }
 
 .circle {
   width: 500px;
