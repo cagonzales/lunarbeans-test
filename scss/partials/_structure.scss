@@ -10,7 +10,9 @@ justify-content: space-between;
 .site-id {
     display: inline-block;
 }
-
+ section {
+     margin: 10;
+ }
 
 body {
     background-color: $color-background-body;
