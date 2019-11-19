@@ -94,3 +94,11 @@ a {
         }
     }
 }
+
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background: $color-links;
+    border-radius: 50%
+  }

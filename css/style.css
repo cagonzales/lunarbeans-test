@@ -19,7 +19,7 @@ img {
 /* Site Header */
 .site-header {
   padding: 1em;
-  color: #da8b37;
+  color: #f79b6f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,7 +63,7 @@ p {
 a {
   display: block;
   padding: 1em;
-  color: #da8b37;
+  color: #f79b6f;
   text-decoration: none; }
 
 /* Layout Section */
@@ -100,3 +100,9 @@ a {
     -webkit-transform: translateX(2em);
     -ms-transform: translateX(2em);
     transform: translateX(2em); } }
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: #f79b6f;
+  border-radius: 50%; }
