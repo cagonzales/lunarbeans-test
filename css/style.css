@@ -102,7 +102,8 @@ a {
     transform: translateX(2em); } }
 
 .circle {
-  width: 100px;
-  height: 100px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
   background: #f79b6f;
-  border-radius: 50%; }
+  position: absolute; }
