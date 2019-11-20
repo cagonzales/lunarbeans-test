@@ -7,7 +7,7 @@ img {
   margin-right: -1em; }
 
 .logo {
-  max-width: 30%; }
+  max-width: 5%; }
 
 .hero {
   max-width: 105%;
@@ -20,15 +20,34 @@ img {
 .site-header {
   padding: 1em;
   color: #f79b6f;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
 .site-id {
+  text-align: center; }
+
+.site-branding h1 {
+  margin: 0;
+  color: #666;
+  padding: .5em 0 .4em 0; }
+
+.site-id h1 a {
   display: inline-block; }
+
+@media (min-width: 768px) {
+  .site-id {
+    float: left; } }
+
+.site-nav ul {
+  text-align: center; }
+
+.site-nav ul li {
+  display: inline-block; }
+
+.site-nav ul li a {
+  display: block; }
 
 section {
   margin: 10; }
