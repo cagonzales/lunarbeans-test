@@ -3,7 +3,7 @@
 .site-header {
 padding: 1em;
 color: $color-links;
-display: inline-block;
+display: flex;
 justify-content: space-between;
 }
 
@@ -19,12 +19,14 @@ justify-content: space-between;
 
 .site-nav ul {
 
-    text-align: center; 
+    text-align: center;
+    
 }
     .site-nav ul li {
       display: inline-block; }
       .site-nav ul li a {
         display: block; 
+        color: $color-links-nav 
     }
 
  section {
@@ -95,7 +97,7 @@ a {
     .text-block {
         position: absolute;
         margin-left: 50%;
-        // transform: translateX(-2em);
+        transform: translateX(-2em);
     }
     }
 }
@@ -114,7 +116,8 @@ a {
 
         .text-block {
             width: 50%;
-            transform: translateX(2em);
+            margin-left: 30%;
+            transform: translateX(-2em);
         }
     }
 }
@@ -128,5 +131,6 @@ a {
     border-radius: 50%;
     background: $color-links;
     position: absolute;
+    
     
   }

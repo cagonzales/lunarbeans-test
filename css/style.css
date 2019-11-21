@@ -14,7 +14,9 @@ img {
   margin-bottom: 0; }
 
 .cat {
-  max-width: 50%; }
+  max-width: 50%;
+  -webkit-transform: translateZ(1);
+  transform: translateZ(1); }
 
 /* Grid */
 .row .column {
@@ -64,7 +66,9 @@ img {
 .site-header {
   padding: 1em;
   color: #f79b6f;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
@@ -86,7 +90,8 @@ img {
   display: inline-block; }
 
 .site-nav ul li a {
-  display: block; }
+  display: block;
+  color: #efeb9b; }
 
 section {
   margin: 10; }
@@ -143,7 +148,10 @@ a {
     width: 105%; }
   .split-crossed-left .text-block {
     position: absolute;
-    margin-left: 50%; } }
+    margin-left: 50%;
+    -webkit-transform: translateX(-2em);
+    -ms-transform: translateX(-2em);
+    transform: translateX(-2em); } }
 
 @media (min-width: 768px) {
   .split-crossed-reversed .container {
@@ -161,9 +169,10 @@ a {
     width: 105%; }
   .split-crossed-reversed .text-block {
     width: 50%;
-    -webkit-transform: translateX(2em);
-    -ms-transform: translateX(2em);
-    transform: translateX(2em); } }
+    margin-left: 30%;
+    -webkit-transform: translateX(-2em);
+    -ms-transform: translateX(-2em);
+    transform: translateX(-2em); } }
 
 .mooncat-moon {
   position: relative; }
