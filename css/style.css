@@ -104,6 +104,12 @@ h2 {
   margin-top: auto;
   margin-bottom: auto; }
 
+h3 {
+  font-family: "itc-avant-garde-gothic-pro", Roboto, Helvetica, sans-serif;
+  font-size: 2em;
+  margin-top: auto;
+  margin-bottom: auto; }
+
 .site-nav {
   display: inline-block;
   font-family: "itc-avant-garde-gothic-pro", Roboto, Helvetica, sans-serif; }
