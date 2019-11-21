@@ -3,18 +3,13 @@
 .site-header {
 padding: 1em;
 color: $color-links;
-display: block;
+display: inline-block;
 justify-content: space-between;
 }
 
 
 .site-id {
     text-align: center; }
-    .site-branding h1 {
-
-      margin: 0;
-      color: #666;
-      padding: .5em 0 .4em 0; }
       .site-id h1 a {
         display: inline-block; }
     @media (min-width: 768px) {
