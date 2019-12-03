@@ -1,22 +1,24 @@
 /* Responsive Images */
 img {
-  max-width: 105%;
+  max-width: 100%;
   height: auto;
-  margin-top: 0;
-  margin-left: -1em;
-  margin-right: -1em; }
+  margin-top: 0; }
 
 .logo {
   max-width: 50%; }
 
-.hero {
-  max-width: 105%;
+.img-hero {
+  max-width: 100%;
+  margin-top: 0;
   margin-bottom: 0; }
 
 .cat {
   max-width: 50%;
-  -webkit-transform: translateZ(1em);
-  transform: translateZ(1em); }
+  -webkit-transform: translateZ(2em);
+  transform: translateZ(2em);
+  -webkit-transform: translateX(-12em);
+  -ms-transform: translateX(-12em);
+  transform: translateX(-12em); }
 
 /* Grid */
 .row .column {
@@ -93,12 +95,10 @@ img {
   display: block;
   color: #efeb9b; }
 
-section {
-  margin: 10; }
-
 body {
   background-color: #29337c;
-  color: rgba(255, 255, 255, 0.89); }
+  color: rgba(255, 255, 255, 0.89);
+  margin: 0; }
 
 h1 {
   font-family: "itc-avant-garde-gothic-pro", Roboto, Helvetica, sans-serif; }
@@ -109,11 +109,15 @@ h2 {
   margin-top: auto;
   margin-bottom: auto; }
 
-h3 {
-  font-family: "itc-avant-garde-gothic-pro", Roboto, Helvetica, sans-serif;
-  font-size: 4em;
+blockquote {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+  font-family: "utopia-std", georgia, serif;
+  font-size: 4.5em;
+  font-weight: 700;
   margin-top: auto;
-  margin-bottom: auto; }
+  -webkit-transform: translateX(-5em);
+  -ms-transform: translateX(-5em);
+  transform: translateX(-5em); }
 
 .site-nav {
   display: inline-block;
@@ -145,7 +149,7 @@ a {
     -ms-flex-align: center;
     align-items: center; }
   .split-crossed-left .image-block {
-    width: 105%; }
+    width: 100%; }
   .split-crossed-left .text-block {
     position: absolute;
     margin-left: 50%;
@@ -166,7 +170,7 @@ a {
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse; }
   .split-crossed-reversed .image-block {
-    width: 105%; }
+    width: 100%; }
   .split-crossed-reversed .text-block {
     width: 50%;
     margin-left: 30%;
@@ -176,10 +180,3 @@ a {
 
 .mooncat-moon {
   position: relative; }
-
-.circle {
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background: #f79b6f;
-  position: absolute; }

@@ -1,23 +1,23 @@
 /* Responsive Images */
 img {
-    max-width: 105%;
+    max-width: 100%;
     height: auto;
     margin-top: 0;
-    margin-left: -1em;
-    margin-right: -1em;
+
   }
 
   .logo {
     max-width: 50%;
   }
 
-  .hero {
-    max-width: 105%;
+  .img-hero {
+    max-width: 100%;
+    margin-top: 0;
     margin-bottom: 0;
   }
 
   .cat {
     max-width: 50%;
-    transform: translateZ(1em);
-
+    transform: translateZ(2em);
+    transform: translateX(-12em);
   }
