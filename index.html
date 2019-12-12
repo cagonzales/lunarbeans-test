@@ -30,30 +30,20 @@
         </nav>
     </header>
 
-    <!-- <section>
-        <div><img src="img/mooncat-face.svg"></div>
-        <div class="content">
-            <h2>Our Story</h2>
-            <p>Lunar Beans is an elite coffee experience, It comes from coffee beans grown 238,900 mi above sea level in
-                volcanic, lunar soil. Lunar Beans is 100% sourced from coffee beans digested and excreted by wild,
-                cage-free moon cats that roam freely.</p>
-        </div>
-    </section> -->
-
     <section class="hero">
         <div class="container">
             <img class="img-hero" src="img/hero-Image1.png" alt="Hero image">
         </div>
     </section>
 
-    <section id="story" class="split-crossed-left" data-scroll="in">
+    <section id="story" class="split-crossed-left">
         <div class="container">
 
             <div class="image-block">
                 <img src="img/mooncat-face.svg" alt="Moon cat face">
             </div>
 
-            <div class="text-block">
+            <div class="text-block" data-scroll="in">
                 <h2>Our Story</h2>
                 <p>Lunar Beans is an elite coffee experience, It comes from coffee beans grown 238,900 mi above sea
                     level in
@@ -63,21 +53,18 @@
         </div>
     </section>
 
-    <!-- <section id="process">
-        <div class="image-block">
-            <img class="collector" src="img/space-collector.svg" alt="Moon cat face">
-        </div>
-    </section> -->
-
     <section id="process" class="split-crossed-reversed" data-scroll="in">
         <div class="container">
-
             <div class="image-block">
-                <img class="collector" src="img/space-collector.svg" alt="Moon cat face">
+                <div class="moonscape">
+                    <img src="img/moonscape.svg" alt="Astronaut">
+                </div>
+                <div class="collector"><img src="img/space-collector.svg" alt="Lunar surface">
+                </div>
             </div>
 
             <div class="text-block">
-                <h2>Our Process</h2>
+                <h2>The Process</h2>
                 <p>We gather beans by carefully combing the lunar surface for wild moon cat droppings. The coffee beans
                     are washed and then brought to our Venus facility where they are roasted to perfection.
                 </p>
@@ -87,18 +74,9 @@
 
     <section id="coffee" class="split-crossed-left" data-scroll="in">
         <div class="container">
-            <!-- 
-            <div class="image-block">
-                <img class="collector" src="img/mooncat-stand.svg" alt="Moon cat face">
-            </div>
-            <div class="circle">
-            </div> -->
-
             <div class="image-block">
                 <img class="cat" src="img/mooncat-stand.svg" alt="Moon cat face">
             </div>
-
-
 
             <div class="text-block">
                 <h2>Our Coffee</h2>
@@ -110,45 +88,77 @@
         </div>
     </section>
 
-    <section id="contact" class="split-crossed-reversed" data-scroll="in">
-        <div class="container">
 
+
+    <section id="contact" class="split-crossed-left" data-scroll="in">
+        <div class="container">
             <div class="image-block">
-                <img src="img/blobs-03.png" alt="Blobs">
+                <img src="img/contact-eyes.svg" alt="Moon cat face">
             </div>
 
             <div class="text-block">
+                <h2> Contact Us</h2>
+                <p>Want to know more about Lunar Beans? <br />
+                    Leave us a messge.</p>
 
-                <div class="container">
-                    <div>
-                        <h2> Contact Us</h2>
-                        <p>Want to know more about Lunar Beans? <br />
-                            Leave us a messge.</p>
+
+                <form class="form" id="form1">
+
+                    <p class="name">
+                        <input name="name" type="text"
+                            class="validate[required,custom[onlyLetter],length[0,100]] feedback-input"
+                            placeholder="Name" id="name" />
+                    </p>
+
+                    <p class="email">
+                        <input name="email" type="text" class="validate[required,custom[email]] feedback-input"
+                            id="email" placeholder="Email" />
+                    </p>
+
+                    <p class="text">
+                        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment"
+                            placeholder="Message"></textarea>
+                    </p>
+
+
+                    <div class="submit">
+                        <input type="submit" value="SEND" id="button-yellow" />
+                        <div class="ease"></div>
                     </div>
-                    <div>
-                        <form>
-                            <label for="contact_name">Name:</label>
-                            <input class="text" type="text" value="" name="contact_name" id="contact_name" />
-
-                            <label for="contact_email">Email :</label>
-                            <input class="text" type="text" value="" name="contact_email" id="contact_email" />
-
-                            <label for="contact_message">Message:</label>
-                            <textarea name="contact_message" id="contact_message"></textarea>
-
-                            <input type="submit" value="Submit" />
+                </form>
 
 
-                        </form>
-                    </div>
-
-                </div>
     </section>
 
 
-    </div>
-    </div>
-    </section>
+
+    <!-- <section class="image-block">
+        <div class="blob">
+            <img src="img/blob_y.svg" alt="Blobs">
+        </div>
+    </section> -->
+
+
+
+    <!-- SMOOTH SCROLL JS -->
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
+    <!-- SCROLL OUT TRIGGERED ANIMATION -->
+
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>
+        ScrollOut(
+            {
+                threshold: 0.4
+            }
+        );
+    </script>
+
+    <!-- MAIN JS -->
+    <script src="js/script.js"></script>
 
 </body>
 

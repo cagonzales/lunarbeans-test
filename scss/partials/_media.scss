@@ -1,10 +1,10 @@
 /* Responsive Images */
-img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 0;
+// img {
+//     max-width: 100%;
+//     height: auto;
+//     margin-top: 0;
 
-  }
+//   }
 
   .logo {
     max-width: 50%;
@@ -12,12 +12,42 @@ img {
 
   .img-hero {
     max-width: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
+    display: block;
   }
 
   .cat {
-    max-width: 50%;
-    transform: translateZ(2em);
-    transform: translateX(-12em);
+    max-width: 80%;
+ 
+  }
+
+  
+
+  // .blob {
+  //   max-width: 50%;
+  //   margin: 0;
+  // }
+
+ 
+#process .image-block{
+  position: relative;
+}
+  .moonscape {
+    // transform: translateZ(10em);
+    // transform: translateX(-10em);
+  }
+
+  .collector {
+    // max-width: 100%;
+    // transform: translateZ(-10em);
+    // transform: translateY(-30em);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 150%;
+    // z-index: 200;
+  }
+
+  #coffee .image-block img{
+    margin-left: -10em;
   }
